@@ -96,14 +96,14 @@
 	<distributionManagement>
 	    <repository>
 	      <id>nexus</id>
-	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://172.31.47.31:8081/repository/ebay-bts-releases/</url>
+	      <name>Engineer Longinu Releases Nexus Repository</name>
+	      <url>http://54.161.84.126:8081/repository/ebay-dev-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://172.31.47.31:8081/repository/ebay-bts-snapshot/</url>
+	      <name>Engineer Longinu Snapshot Nexus Repository </name>
+	      <url>http://54.161.84.126:8081/repository/ebay-dev-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
