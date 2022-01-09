@@ -97,13 +97,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Engineer Longinu Releases Nexus Repository</name>
-	      <url>http://54.161.84.126:8081/repository/ebay-dev-releases/</url>
+	      <url>http://172.31.92.149:8081/repository/ebay-dev-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Engineer Longinu Snapshot Nexus Repository </name>
-	      <url>http://54.161.84.126:8081/repository/ebay-dev-snapshot/</url>
+	      <url>http://172.31.92.149:8081/repository/ebay-dev-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
