@@ -23,7 +23,7 @@ node
  sh "${mavenHome}/bin/mvn clean package"
  }
  
-  /*
+  
  stage("ExecuteSonarQubeReport")
  {
  sh "${mavenHome}/bin/mvn sonar:sonar"
@@ -49,6 +49,6 @@ node
  Mithun Technologies,
  9980923226.''', cc: 'ferdwin4real@gmail.com', from: '', replyTo: '', subject: 'Build is over!!', to: 'fondonglonginu.f12@gmail.com'
  }
- */
+ 
  
  }
