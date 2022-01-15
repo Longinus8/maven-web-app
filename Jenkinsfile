@@ -34,12 +34,12 @@ node
  sh "${mavenHome}/bin/mvn deploy"
  }
  
-  stage("DeployAppTomcat")
+ /* stage("DeployAppTomcat")
  {
   sshagent(['423b5b58-c0a3-42aa-af6e-f0affe1bad0c']) {
     sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war  ec2-user@54.166.99.233:/opt/tomcat9/webapps/" 
   }
- }
+ }*/
  
  stage('EmailNotification')
  {
