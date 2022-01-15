@@ -8,25 +8,29 @@ pipeline {
 
 	stages {
 		stage ('github-scm-pull') {
+
 			steps {
 			    git credentialsId: 'ee873c3a-7930-4f9c-9e43-058653ac8b95', url: 'https://github.com/Longinus8/maven-web-app'
 				
 			}
 		stage ('build') {
+
 			steps {
-				sh '${mavenHome}/bin/mvn build'
+				sh "${mavenHome}/bin/mvn build"
 
 			}	
 		}
 		stage ('test'){
+
 			steps {
-				sh '${mavenHome}/bin/mvn sonar:sonar'
+				sh "${mavenHome}/bin/mvn sonar:sonar"
 
 			}
 		}
 		stage ('upload'){
+
 			steps {
-				sh '${mavenHome}/bin/mvn deploy'
+				sh "${mavenHome}/bin/mvn deploy"
 
 			}
 		}
