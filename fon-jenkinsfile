@@ -13,6 +13,7 @@ pipeline {
 			    git credentialsId: 'ee873c3a-7930-4f9c-9e43-058653ac8b95', url: 'https://github.com/Longinus8/maven-web-app'
 				
 			}
+		}	
 		stage('build') {
 
 			steps {
