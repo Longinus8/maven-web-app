@@ -47,4 +47,5 @@ pipeline {
 		}
 
 	}
+	//having to introduce the post block to make use of some variables
 }
