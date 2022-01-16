@@ -48,4 +48,9 @@ pipeline {
 
 	}
 	//having to introduce the post block to make use of some variables
+	post {
+		failure {
+			echo "the build number is ${BUILD_NUMBER} and the workspace location: ${WORKSPACE}"
+		}
+	}
 }
