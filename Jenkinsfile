@@ -54,6 +54,7 @@ pipeline {
 		}
 		success {
 			echo "the build number is ${BUILD_NUMBER} and the workspace location: ${WORKSPACE}"
+			echo "This is a self-configured declarative pipeline!!! by Ferdinand FONDONG LONGINU"
 		}
 	}
 }
