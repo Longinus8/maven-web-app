@@ -1,4 +1,6 @@
+//Author: Ferdinand FONDONG LONGINU 
 pipeline {
+
 	
 	agent any
 	
