@@ -11,3 +11,4 @@ Many changes has to be considered when using a jenkinsfile from another reposito
   -tomcat url, ssh-agent and destination where the files has to be copied 
   -emails to use in email notification.
 #README.md files are so important 
+#new information to test the build 
