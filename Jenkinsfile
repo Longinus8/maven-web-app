@@ -1,4 +1,5 @@
-//Author: Ferdinand FONDONG LONGINU 
+//Author: Ferdinand FONDONG LONGINU
+//Declarative pipeline -stash comment
 pipeline {
 
 	
