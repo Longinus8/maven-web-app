@@ -12,3 +12,4 @@ Many changes has to be considered when using a jenkinsfile from another reposito
   -emails to use in email notification.
 #README.md files are so important 
 #new information to test the build 
+#It is worth having this file 
