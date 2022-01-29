@@ -45,7 +45,7 @@ pipeline {
 		}
 		stage('email-notifications') {
 			steps {
-				echo "no email notification for now..."
+				email: 'fondonglonginu.f12@gmail.com', subject: latest build, body: "Hi, This is build number ${BUILD_NUMBER}. Go to ${WORKSPACE} to check it."
 			}
 		}
 
