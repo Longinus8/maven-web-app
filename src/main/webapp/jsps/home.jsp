@@ -14,7 +14,8 @@
 	Landmark Technology is a an ideal online training  platform for DevOps and Cloud Engineers. 
 	We offer interview preparations and job assitance. It is highly recommended for anyone to follow the training.
 	I can attest it myself as a Landmark former student. Ferdinand is my name. 
-	The shout of the King is in our midst. His name is JESUS.  HE IS OUR SUCCESS ACCESS KEY</h2>
+	The shout of the King is in our midst. His name is JESUS.  HE IS OUR SUCCESS ACCESS KEY
+ 	The Lord Jesus is the key to our salvation and I will praise him all the days of my life!</h2>
 <hr>
 <div style="text-align: center;">
 	<span>
