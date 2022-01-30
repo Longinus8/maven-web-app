@@ -45,7 +45,7 @@ pipeline {
 		}
 		stage('email-notifications') {
 			steps {
-				mail to: 'fondonglonginu.f12@mail.com',
+				mail to: 'fondonglonginu.f12@gmail.com',
             	subject: "Failed Pipeline: ${BUILD_NUMBER}",
             	body: "Build failed: ${env.BUILD_URL}"
 			}
