@@ -2,7 +2,7 @@
 //Declarative pipeline -stash comment
 pipeline {
 
-	
+	//The label to specify in agent can be the node's name
 	agent { label "slave1" }
 	
 	environment {
