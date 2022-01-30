@@ -46,8 +46,8 @@ pipeline {
 		stage('email-notifications') {
 			steps {
 				mail to: 'fondonglonginu.f12@gmail.com',
-            	subject: "Failed Pipeline: ${BUILD_NUMBER}",
-            	body: "Build failed: ${env.BUILD_URL}"
+            	subject: "End of pipeline: ${BUILD_NUMBER}",
+            	body: "Go to ${env.BUILD_URL} to verify the build"
 			}
 		}
 
@@ -55,9 +55,15 @@ pipeline {
 	//having to introduce the post block to make use of some variables
 	post {
 		failure {
+			mail to: 'fondonglonginu.f12@gmail.com',
+            subject: "Failed Pipeline: ${BUILD_NUMBER}",
+            body: "Build failed: ${env.BUILD_URL}"
 			echo "the build number is ${BUILD_NUMBER} and the workspace location: ${WORKSPACE}"
 		}
 		success {
+			mail to: 'fondonglonginu.f12@gmail.com',
+            subject: "Success! Pipeline: ${BUILD_NUMBER} buid successfully!",
+            body: "BUil: ${BUILD_NUMBER} successfull!. GO to ${env.BUILD_URL} to check it. you can check the workspace at ${WORKSPACE}"
 			echo "the build number is ${BUILD_NUMBER} and the workspace location: ${WORKSPACE}"
 			echo "This is a self-configured declarative pipeline!!! by Ferdinand FONDONG LONGINU"
 		}
