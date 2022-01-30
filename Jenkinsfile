@@ -3,7 +3,7 @@
 pipeline {
 
 	
-	agent any
+	agent slave1
 	
 	environment {
 		mavenHome = tool name: 'maven3.8.4'
