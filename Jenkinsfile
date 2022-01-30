@@ -45,11 +45,9 @@ pipeline {
 		}
 		stage('email-notifications') {
 			steps {
-				emailext (
-                    subject: "STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
-                    body: "STARTED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'"
-              		Check "console output at &QUOT;<a href='${env.BUILD_URL}'>${env.JOB_NAME} [${env.BUILD_NUMBER}];"
-           	 	) 
+				mail to: 'fondonglonginu.f12@mail.com',
+            	subject: "Failed Pipeline: ${BUILD_NUMBER}",
+            	body: "Build failed: ${env.BUILD_URL}"
 			}
 		}
 
