@@ -31,16 +31,21 @@ pipeline {
 
 			}
 		}
-		stage('upload') {
+		//parallel block maximizes efficiency when the stages do not depent on each other so they can run simultaneously.
+		stage('upload&deploy'){
+			parallel {
+				stage('upload') {
 
-			steps {
-				sh "${mavenHome}/bin/mvn deploy"
+					steps {
+						sh "${mavenHome}/bin/mvn deploy"
 
-			}
-		}
-		stage('deploy-tomcat') {
-			steps {
-				deploy adapters: [tomcat9(credentialsId: '7f6fc606-c9e7-47f1-a08d-e6eed61265b1', path: '', url: 'http://54.159.198.247:8080/')], contextPath: null, war: 'target/*war'
+					}
+				}
+				stage('deploy-tomcat') {
+					steps {
+						deploy adapters: [tomcat9(credentialsId: '7f6fc606-c9e7-47f1-a08d-e6eed61265b1', path: '', url: 'http://54.159.198.247:8080/')], contextPath: null, war: 'target/*war'
+					}
+				}
 			}
 		}
 		stage('email-notifications') {
