@@ -3,7 +3,7 @@
 pipeline {
 
 	//The label to specify in agent can be the node's name
-	agent { label 'Build-In Node' }
+	agent any
 	
 	environment {
 		mavenHome = tool name: 'maven3.8.4'
