@@ -1,0 +1,15 @@
+---
+- hosts: docker
+  become: yes
+  tasks: 
+  - name: build the application 
+    command: docker build -t mylandmarktech/app:15 .
+  - name: push docker image to our registry
+    command: docker push  mylandmarktech/app:15 .
+---
+- hosts: k8s
+  become: yes 
+  tasks: 
+  - name: application deployment 
+    command: kubectl apply -f deploy-myland.yml 
+    

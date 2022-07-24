@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    tools {
+        maven 'maven3.8.5'
+    }
+    
+    stages {
+        
+        stage('git-clone') {
+            steps{
+                git 'https://github.com/Longinus8/maven-web-app'
+            }
+        }    
+        stage('maven-build') {
+            steps {
+                sh "mvn clean package"
+            }
+        }
+    }
+}
